@@ -1,5 +1,7 @@
 import express, { Application } from 'express';
 import bodyParser from 'body-parser';
+import mongoose from 'mongoose';
+import { applySecurityMiddleware } from './middlewares/security';
 import authRoutes from './routes/authRoutes';
 import forumRoutes from './routes/forumRoutes';
 import transferRoutes from './routes/transferRoutes';
